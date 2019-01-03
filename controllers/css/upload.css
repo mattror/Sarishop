@@ -1,0 +1,158 @@
+/******************************************************************* UPLOAD PRODUCT **********************************/
+
+body {
+    font-family: arial;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* wrapper */
+.wrapper {
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #00000066;
+}
+/* container */
+.container{
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 50%;
+    padding: 1%;
+    margin: 0 auto 0 auto;
+    display: block;
+    overflow: auto;
+}
+
+#input-file{
+    visibility: hidden;
+}
+/* choose image */
+.choose-image {
+    float: left;
+    width: 100%;
+}
+.choose-image label {
+    float: left;
+    width: 30%;
+    padding: 3% 2%;
+    text-align: center;
+    background: #007ACC;
+    border: solid 1px #999999;
+    color: #ffffff;
+}
+/* image output */
+.img-output {
+    float: left;
+    width: 5em;
+    height: 4.1em;
+    margin: 0 1%;
+    overflow: hidden;
+    border: solid 1px #999999;
+}
+.img-output img {
+    width: 100%;
+}
+/* info */
+.info{
+    width: 100%;
+    float: left;
+    border-bottom: solid 1px #999999;
+}
+.info input[type="text"], 
+.info textarea, 
+.info select{
+    width: 100%;
+    margin: 1% 0 1% 0;
+    padding: 1% 2%;
+}
+.info input[type="number"]{
+    width: 100%;
+    margin: 1% 0 1% 0;
+    padding: 1% 2%;
+}
+.info label{
+    color: #1e1e1e;
+    font-weight: bold;
+    display: block;
+}
+
+.info .submit,
+.cancel a {
+    background: #007ACC;
+    color: #ffffff;
+    border: #999999;
+    margin: 0.5% auto 1% auto;
+    display: block;
+    padding: 1% 2%;
+}
+.cancel a {
+    background: #f44336;
+    margin: 1%;
+    float: left;
+    text-decoration: none;
+}
+.cancel .submit a{
+    text-decoration: none;
+}
+/* checkbox */
+#frmCheckAll {
+    border-top: #F0F0F0 2px solid;
+    background: #FAF8F8;
+    padding: 10px;
+}
+
+#divCheckAll {
+    background-color: #F2F2F2;
+    border: #DADADA 1px solid;
+    margin-bottom: 15px;
+    width: 6em;
+    padding: 4px 10px;
+}
+
+#divCheckboxList {
+    border-top: #DADADA 1px solid;
+}
+
+.divCheckboxItem {
+    padding: 6px 10px;
+}
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+}
